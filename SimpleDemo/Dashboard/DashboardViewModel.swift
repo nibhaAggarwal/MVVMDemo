@@ -24,19 +24,34 @@ class DashboardViewModel: NSObject {
     func apiAllDetails() {
         APIManager.createRequest(qMes: Constants.BaseURL+MethodName.alldetails.rawValue, method: HTTPMethod.get.rawValue) { (data, response, error) in
             if error != nil {
-                AppLoader.hideLoader()
+                kLoader.hideLoader(self.dependency!.view)
             }
             guard response != nil else {
-                AppLoader.hideLoader()
+                kLoader.hideLoader(self.dependency!.view)
                 return
             }
-            AppLoader.hideLoader()
+//            Utils.createBackGroundQueue {
+//                kLoader.hideLoader(self.dependency!.view)
+//            }
+            
             if let usuableData = data {
                 let decoder = JSONDecoder()
-                AppLoader.showLoader()
+                
                 self.allDataModel = try! decoder.decode(AllDataModel.self, from: usuableData)
+                print(self.allDataModel?.alldetails[0].allGroups)
+                self.saveGroupTable(model: self.allDataModel?.alldetails[0].allGroups)
                 self.completion(self.allDataModel!)
             }
         }
+    }
+    
+    
+    //MARK: - Save Table
+    private func saveGroupTable(model: [AllGroups]?) {
+        var data = [[String:Any]]()
+        for i in 0..<model!.count {
+            data.append(["groupname": model![i].groupname!, "groupcode": model![i].groupcode!, "total": model![i].total!, "available": model![i].available!])
+        }
+        CoreDataMethods.insertRecords(entity: "GroupTable", attributeKey: nil, objectToSave: data)
     }
 }

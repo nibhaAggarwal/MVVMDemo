@@ -6,12 +6,10 @@
 import UIKit
 
 
-
 //MARK:  Variables
 let kAppDelegate = UIApplication.shared.delegate as! AppDelegate
 let kUserDefaults = UserDefaults.standard
-
-
+let kLoader = Loader()
 
 //MARK:  AppName
 var applicationName: String {

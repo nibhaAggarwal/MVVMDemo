@@ -12,7 +12,7 @@ import CoreData
 typealias CoreDataResponse = (_ : Any?) -> Void
 var coreArray = NSArray()
 
-class CoreDataDeleteMethods {
+class CoreDataMethods {
 
     //MARK: - Delete Data From Table
     static func deleteFromCoreDataTable(entityTable: String) {
@@ -26,6 +26,8 @@ class CoreDataDeleteMethods {
             catch{}
         } catch{}
     }
+    
+    
     
 //    let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "SingleAllocatedPen")
 //    let predicate = NSPredicate(format: "penid = '\((tempdic["penid"] as? String)!)'")
@@ -48,15 +50,33 @@ class CoreDataDeleteMethods {
         } catch{}
     }
     
-    static func fetchAllData(entityName: String) -> NSArray{
+    //MARK: - Fetch All Records
+    static func fetchAllData(entityName: String, completion: @escaping(CoreDataResponse)) -> Void{
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         fetchRequest.returnsObjectsAsFaults = false
         do{
             let fetchedResult = try kAppDelegate.managedObjectContext.fetch(fetchRequest) as? [NSManagedObject]
             if let results = fetchedResult{
                 coreArray = results as NSArray
+                completion(coreArray)
             }
         } catch {}
-        return coreArray
+//        return coreArray
+    }
+    
+    
+    //MARK: - Insert Records
+    static func insertRecords(entity: String, attributeKey: String?, objectToSave: [[String : Any]]) {
+        for objecrs in objectToSave {
+            let content = NSEntityDescription.insertNewObject(forEntityName: entity, into: kAppDelegate.managedObjectContext)
+            content.setValuesForKeys(objecrs)
+            do {
+                try kAppDelegate.managedObjectContext.save()
+                print("saved")
+            } catch {
+                print("Error occured...")
+            }
+        }
+        
     }
 }

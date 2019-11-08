@@ -46,21 +46,35 @@ class LoginViewModel: NSObject {
     func apiLoginApp() {
         APIManager.createRequest(qMes: (URL(string: Constants.API.resetAlbum+MethodName.login.rawValue)?.appendingQueryItems(getParams()))!, method: HTTPMethod.get.rawValue) { (data, response, error) in
             if error != nil {
-                AppLoader.hideLoader()
+                Loader().hideLoader(self.dependency!.view)
             }
             guard response != nil else {
-                AppLoader.hideLoader()
+                Loader().hideLoader(self.dependency!.view)
                 return
             }
-            AppLoader.hideLoader()
+            Loader().hideLoader(self.dependency!.view)
             if let usuableData = data {
                 Utils.createMainQueue {
                     let decoder = JSONDecoder()
                     self.loginModel = try! decoder.decode(Model.self, from: usuableData)
                     print(self.loginModel)
+                    self.saveUserTable(model: self.loginModel)
+                    self.fetchAllData()
                     self.completion(self.loginModel)
                 }
             }
+        }
+    }
+    //MARK: - Save Table
+    private func saveUserTable(model: Model) {
+        let data: [[String: Any]] = [["email": model.username!, "fname": model.fname!, "lname": model.lname!, "graderId": model.graderid!, "password":dependency?.textFieldPwd?.text! ?? ""]]
+        CoreDataMethods.insertRecords(entity: "UserTable", attributeKey: nil, objectToSave: data)
+    }
+    
+    //MARK: - Fetch From Table
+    private func fetchAllData() {
+        CoreDataMethods.fetchAllData(entityName: "UserTable") { (array) in
+//            print(array!)
         }
     }
 }

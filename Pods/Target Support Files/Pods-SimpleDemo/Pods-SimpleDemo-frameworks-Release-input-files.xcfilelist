@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SimpleDemo/Pods-SimpleDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BiometricAuthenticator/BiometricAuthenticator.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework

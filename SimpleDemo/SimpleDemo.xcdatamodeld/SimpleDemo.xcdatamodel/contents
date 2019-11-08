@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18E227" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GroupTable" representedClassName="GroupTable" syncable="YES" codeGenerationType="class">
+        <attribute name="available" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="groupcode" optional="YES" attributeType="String"/>
+        <attribute name="groupname" optional="YES" attributeType="String"/>
+        <attribute name="total" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserTable" representedClassName="UserTable" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="fname" optional="YES" attributeType="String"/>
+        <attribute name="graderId" optional="YES" attributeType="String"/>
+        <attribute name="lname" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="UserTable" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="GroupTable" positionX="-63" positionY="18" width="128" height="28"/>
+    </elements>
 </model>

@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76AF80822DCECBECC8943BD4 /* Pods_SimpleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0765D17725B287AFDDC41 /* Pods_SimpleDemo.framework */; };
+		DA15B10A2371726C006F8F9C /* DataShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15B1092371726C006F8F9C /* DataShowViewController.swift */; };
 		DA1D17CE2364002200E143D9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D17CD2364002200E143D9 /* LoginViewModel.swift */; };
 		DA1D17D02364002B00E143D9 /* AllDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D17CF2364002B00E143D9 /* AllDataModel.swift */; };
 		DA1D17D42364115200E143D9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D17D32364115200E143D9 /* Model.swift */; };
+		DA1F909B23727A01002891FB /* DataShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F909A23727A01002891FB /* DataShowViewModel.swift */; };
+		DA1F909E2372C262002891FB /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F909D2372C262002891FB /* ScrollViewController.swift */; };
+		DA1F90A02372C2D0002891FB /* PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1F909F2372C2D0002891FB /* PageView.xib */; };
+		DA1F90A22372C4FF002891FB /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F90A12372C4FF002891FB /* PageView.swift */; };
+		DA1F90A42372C8E4002891FB /* ScrollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F90A32372C8E4002891FB /* ScrollViewModel.swift */; };
 		DA2E5D972367FDBA00CB4489 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E5D962367FDBA00CB4489 /* TextField+Extension.swift */; };
 		DA2E5D99236800F700CB4489 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E5D98236800F700CB4489 /* String+Extension.swift */; };
 		DA2E5D9B2368046900CB4489 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E5D9A2368046900CB4489 /* UIViewController+Extension.swift */; };
@@ -18,10 +25,13 @@
 		DA2E5DA2236850A400CB4489 /* TableCell+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E5DA1236850A400CB4489 /* TableCell+TableView.swift */; };
 		DA2E5DA52368545800CB4489 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2E5DA32368545800CB4489 /* TableCell.xib */; };
 		DA2E5DA62368545800CB4489 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E5DA42368545800CB4489 /* TableCell.swift */; };
+		DA9810352373D6840098ECFC /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9810342373D6840098ECFC /* DarkMode.swift */; };
+		DAA2DA4D236AEE0500DD9924 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2DA4C236AEE0500DD9924 /* Image+Extension.swift */; };
 		DAACE2152369816400FE880E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACE2142369816400FE880E /* Date+Extension.swift */; };
 		DAACE2172369834400FE880E /* Label+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACE2162369834400FE880E /* Label+Extension.swift */; };
 		DAACE219236984D500FE880E /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACE218236984D500FE880E /* CommonMethods.swift */; };
 		DAACE21C2369888B00FE880E /* CoreDataMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACE21B2369888B00FE880E /* CoreDataMethods.swift */; };
+		DAC3EF3D236C04F800E418C3 /* BiometricViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC3EF3C236C04F800E418C3 /* BiometricViewModel.swift */; };
 		DAC637A42362E8EB00A094BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC637A32362E8EB00A094BC /* AppDelegate.swift */; };
 		DAC637A62362E8EB00A094BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC637A52362E8EB00A094BC /* SceneDelegate.swift */; };
 		DAC637A82362E8EB00A094BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC637A72362E8EB00A094BC /* ViewController.swift */; };
@@ -41,12 +51,22 @@
 		DAC637D02362FD7300A094BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC637CF2362FD7300A094BC /* Constants.swift */; };
 		DAC637D32363088500A094BC /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC637D12363088500A094BC /* SwiftLoader.swift */; };
 		DAC637D42363088500A094BC /* AppLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC637D22363088500A094BC /* AppLoader.swift */; };
+		DAFAD878236D48A500D5C252 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFAD877236D48A500D5C252 /* BarcodeViewController.swift */; };
+		DAFAD87A236D4F6B00D5C252 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFAD879236D4F6B00D5C252 /* QRScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6313597DC986FCCDF409DE27 /* Pods-SimpleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDemo.release.xcconfig"; path = "Target Support Files/Pods-SimpleDemo/Pods-SimpleDemo.release.xcconfig"; sourceTree = "<group>"; };
+		75F0765D17725B287AFDDC41 /* Pods_SimpleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA15B1092371726C006F8F9C /* DataShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataShowViewController.swift; sourceTree = "<group>"; };
 		DA1D17CD2364002200E143D9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DA1D17CF2364002B00E143D9 /* AllDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDataModel.swift; sourceTree = "<group>"; };
 		DA1D17D32364115200E143D9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DA1F909A23727A01002891FB /* DataShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataShowViewModel.swift; sourceTree = "<group>"; };
+		DA1F909D2372C262002891FB /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		DA1F909F2372C2D0002891FB /* PageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageView.xib; sourceTree = "<group>"; };
+		DA1F90A12372C4FF002891FB /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		DA1F90A32372C8E4002891FB /* ScrollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewModel.swift; sourceTree = "<group>"; };
 		DA2E5D962367FDBA00CB4489 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
 		DA2E5D98236800F700CB4489 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		DA2E5D9A2368046900CB4489 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -55,10 +75,13 @@
 		DA2E5DA1236850A400CB4489 /* TableCell+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableCell+TableView.swift"; sourceTree = "<group>"; };
 		DA2E5DA32368545800CB4489 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		DA2E5DA42368545800CB4489 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		DA9810342373D6840098ECFC /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
+		DAA2DA4C236AEE0500DD9924 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		DAACE2142369816400FE880E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		DAACE2162369834400FE880E /* Label+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Extension.swift"; sourceTree = "<group>"; };
 		DAACE218236984D500FE880E /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
 		DAACE21B2369888B00FE880E /* CoreDataMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMethods.swift; sourceTree = "<group>"; };
+		DAC3EF3C236C04F800E418C3 /* BiometricViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricViewModel.swift; sourceTree = "<group>"; };
 		DAC637A02362E8EB00A094BC /* SimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC637A32362E8EB00A094BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAC637A52362E8EB00A094BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +103,9 @@
 		DAC637CF2362FD7300A094BC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAC637D12363088500A094BC /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
 		DAC637D22363088500A094BC /* AppLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLoader.swift; sourceTree = "<group>"; };
+		DAFAD877236D48A500D5C252 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		DAFAD879236D4F6B00D5C252 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		EE2205FB202C0C5673903045 /* Pods-SimpleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleDemo.debug.xcconfig"; path = "Target Support Files/Pods-SimpleDemo/Pods-SimpleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,20 +113,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AF80822DCECBECC8943BD4 /* Pods_SimpleDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7688D3DB599992358F411F7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE2205FB202C0C5673903045 /* Pods-SimpleDemo.debug.xcconfig */,
+				6313597DC986FCCDF409DE27 /* Pods-SimpleDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA15B10823715611006F8F9C /* DataVC */ = {
+			isa = PBXGroup;
+			children = (
+				DA15B1092371726C006F8F9C /* DataShowViewController.swift */,
+				DA1F909A23727A01002891FB /* DataShowViewModel.swift */,
+			);
+			path = DataVC;
+			sourceTree = "<group>";
+		};
 		DA1D17CC2363FEEA00E143D9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				DAC637A72362E8EB00A094BC /* ViewController.swift */,
 				DA1D17CD2364002200E143D9 /* LoginViewModel.swift */,
+				DAC3EF3C236C04F800E418C3 /* BiometricViewModel.swift */,
 				DA1D17D32364115200E143D9 /* Model.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		DA1F909C2372C237002891FB /* ScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA1F909D2372C262002891FB /* ScrollViewController.swift */,
+				DA1F90A32372C8E4002891FB /* ScrollViewModel.swift */,
+				DA1F909F2372C2D0002891FB /* PageView.xib */,
+				DA1F90A12372C4FF002891FB /* PageView.swift */,
+			);
+			path = ScrollViewController;
 			sourceTree = "<group>";
 		};
 		DA2E5D952367FD8F00CB4489 /* Extensions */ = {
@@ -112,6 +169,8 @@
 				DAACE2142369816400FE880E /* Date+Extension.swift */,
 				DAACE2162369834400FE880E /* Label+Extension.swift */,
 				DAACE218236984D500FE880E /* CommonMethods.swift */,
+				DAA2DA4C236AEE0500DD9924 /* Image+Extension.swift */,
+				DA9810342373D6840098ECFC /* DarkMode.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -142,6 +201,8 @@
 			children = (
 				DAC637A22362E8EB00A094BC /* SimpleDemo */,
 				DAC637A12362E8EB00A094BC /* Products */,
+				7688D3DB599992358F411F7A /* Pods */,
+				F253D268BC9BC88CA594D05A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +219,9 @@
 			children = (
 				DAC637A32362E8EB00A094BC /* AppDelegate.swift */,
 				DAC637A52362E8EB00A094BC /* SceneDelegate.swift */,
+				DA1F909C2372C237002891FB /* ScrollViewController */,
+				DAFAD876236D487F00D5C252 /* BarCode */,
+				DA15B10823715611006F8F9C /* DataVC */,
 				DA2E5D9C236824FC00CB4489 /* Dashboard */,
 				DA1D17CC2363FEEA00E143D9 /* Login */,
 				DAC637BB2362F20300A094BC /* AppConfiguration */,
@@ -207,6 +271,23 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		DAFAD876236D487F00D5C252 /* BarCode */ = {
+			isa = PBXGroup;
+			children = (
+				DAFAD877236D48A500D5C252 /* BarcodeViewController.swift */,
+				DAFAD879236D4F6B00D5C252 /* QRScannerViewController.swift */,
+			);
+			path = BarCode;
+			sourceTree = "<group>";
+		};
+		F253D268BC9BC88CA594D05A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F0765D17725B287AFDDC41 /* Pods_SimpleDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAC637B72362E8F100A094BC /* Build configuration list for PBXNativeTarget "SimpleDemo" */;
 			buildPhases = (
+				0DF67AA498C2549674B50FB7 /* [CP] Check Pods Manifest.lock */,
 				DAC6379C2362E8EB00A094BC /* Sources */,
 				DAC6379D2362E8EB00A094BC /* Frameworks */,
 				DAC6379E2362E8EB00A094BC /* Resources */,
@@ -268,6 +350,7 @@
 				DAC637BF2362F3F400A094BC /* Environments.plist in Resources */,
 				DAC637B32362E8F100A094BC /* LaunchScreen.storyboard in Resources */,
 				DAC637B02362E8F100A094BC /* Assets.xcassets in Resources */,
+				DA1F90A02372C2D0002891FB /* PageView.xib in Resources */,
 				DA2E5DA52368545800CB4489 /* TableCell.xib in Resources */,
 				DAC637AB2362E8EC00A094BC /* Main.storyboard in Resources */,
 			);
@@ -275,23 +358,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DF67AA498C2549674B50FB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DAC6379C2362E8EB00A094BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9810352373D6840098ECFC /* DarkMode.swift in Sources */,
+				DAA2DA4D236AEE0500DD9924 /* Image+Extension.swift in Sources */,
 				DA2E5D9B2368046900CB4489 /* UIViewController+Extension.swift in Sources */,
 				DAC637C12362F6E900A094BC /* APIManager.swift in Sources */,
 				DA2E5D99236800F700CB4489 /* String+Extension.swift in Sources */,
 				DAC637CB2362F9E600A094BC /* DynamicValue.swift in Sources */,
+				DAFAD878236D48A500D5C252 /* BarcodeViewController.swift in Sources */,
 				DAC637C52362F91700A094BC /* Resource.swift in Sources */,
 				DAC637BD2362F22E00A094BC /* ConfigurationManager.swift in Sources */,
 				DA1D17CE2364002200E143D9 /* LoginViewModel.swift in Sources */,
+				DA1F90A22372C4FF002891FB /* PageView.swift in Sources */,
 				DAC637D32363088500A094BC /* SwiftLoader.swift in Sources */,
+				DA1F90A42372C8E4002891FB /* ScrollViewModel.swift in Sources */,
 				DAC637C32362F87800A094BC /* ImageDownloader.swift in Sources */,
 				DAC637A82362E8EB00A094BC /* ViewController.swift in Sources */,
 				DA2E5DA2236850A400CB4489 /* TableCell+TableView.swift in Sources */,
 				DA1D17D02364002B00E143D9 /* AllDataModel.swift in Sources */,
+				DAC3EF3D236C04F800E418C3 /* BiometricViewModel.swift in Sources */,
 				DA2E5D972367FDBA00CB4489 /* TextField+Extension.swift in Sources */,
 				DAC637C72362F9A700A094BC /* Reachability.swift in Sources */,
 				DAC637D02362FD7300A094BC /* Constants.swift in Sources */,
@@ -300,11 +414,15 @@
 				DAC637D42363088500A094BC /* AppLoader.swift in Sources */,
 				DA2E5DA0236826AA00CB4489 /* DashboardViewModel.swift in Sources */,
 				DAACE219236984D500FE880E /* CommonMethods.swift in Sources */,
+				DAFAD87A236D4F6B00D5C252 /* QRScannerViewController.swift in Sources */,
 				DA2E5D9E2368268E00CB4489 /* DashboardVC.swift in Sources */,
+				DA15B10A2371726C006F8F9C /* DataShowViewController.swift in Sources */,
 				DAC637A42362E8EB00A094BC /* AppDelegate.swift in Sources */,
 				DAC637AE2362E8EC00A094BC /* SimpleDemo.xcdatamodeld in Sources */,
 				DAACE2172369834400FE880E /* Label+Extension.swift in Sources */,
 				DAC637C92362F9C100A094BC /* Webservice.swift in Sources */,
+				DA1F909B23727A01002891FB /* DataShowViewModel.swift in Sources */,
+				DA1F909E2372C262002891FB /* ScrollViewController.swift in Sources */,
 				DA1D17D42364115200E143D9 /* Model.swift in Sources */,
 				DAC637A62362E8EB00A094BC /* SceneDelegate.swift in Sources */,
 				DAC637CE2362FA2600A094BC /* Utils.swift in Sources */,
@@ -450,6 +568,7 @@
 		};
 		DAC637B82362E8F100A094BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE2205FB202C0C5673903045 /* Pods-SimpleDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +587,7 @@
 		};
 		DAC637B92362E8F100A094BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6313597DC986FCCDF409DE27 /* Pods-SimpleDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

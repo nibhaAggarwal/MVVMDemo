@@ -47,7 +47,7 @@ struct AllDetails: Codable {
     
 }
 
-struct AllGroups: Codable {
+class AllGroups: Codable {
     var groupname: String?
     var groupcode: String?
     var total: String?

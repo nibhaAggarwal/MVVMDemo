@@ -38,10 +38,10 @@ extension DashboardVC: UITableViewDelegate, UITableViewDataSource {
 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let cell = tableView.cellForRow(at: indexPath) as? ContactCell
+        let cell = tableView.cellForRow(at: indexPath) as? TableCell
         
-//        let objVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-//        objVC.objModelElement = self.modalObj?[indexPath.row]
- //       self.navigationController?.pushViewController(objVC, animated: true)
+        let objVC = self.storyboard?.instantiateViewController(withIdentifier: "DataShowViewController") as! DataShowViewController
+        objVC.objElemet = self.arrayData?[indexPath.row]
+        self.navigationController?.pushViewController(objVC, animated: true)
     }
 }

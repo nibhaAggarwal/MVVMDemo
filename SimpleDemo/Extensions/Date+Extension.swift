@@ -30,15 +30,22 @@ extension Date {
         return (cal as NSCalendar).date(byAdding: comp, to: self.startOfMonth()!, options: [])!
     }
     
-    func Databse_dateconvertor(_ datestr: String!) -> Date
+    func DatabseDateconvertor(_ datestr: String?) -> Date
     {
         let dateFormatter = DateFormatter()
         let twelveHourLocale: Locale = Locale(identifier: "en_US_POSIX")
         dateFormatter.locale = twelveHourLocale
         dateFormatter.dateFormat = "dd/MM/yyyy"
         dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-        let gotDate: Date = dateFormatter.date(from: datestr)!
+        let gotDate: Date = dateFormatter.date(from: datestr!)!
         return gotDate
+    }
+    
+    func getTodayDate() {
+        let dateFormatter = DateFormatter()
+        let twelveHourLocale: Locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.locale = twelveHourLocale
+        dateFormatter.dateFormat = "dd/MM/yyyy"
     }
 }
 

@@ -58,7 +58,7 @@ open class SwiftLoader: UIView {
 
             loader.activityIndicatorView.center = window.center
             loader.activityIndicatorView.hidesWhenStopped = true
-            loader.activityIndicatorView.style = .whiteLarge
+            loader.activityIndicatorView.style = .large
             loader.activityIndicatorView.color = UIColor.black
 
             for view in window.subviews {
