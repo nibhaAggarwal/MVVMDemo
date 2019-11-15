@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StarRatingView" customModule="StarRating" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="ratingWillBeSetFromOutSide">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                    <color key="value" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="contentVw" destination="iN0-l3-epB" id="4Pv-GS-ZIe"/>
+                <outlet property="star1" destination="3RH-JF-cTG" id="Ilo-mX-3sq"/>
+                <outlet property="star2" destination="y2W-Mj-jiM" id="jhG-Hj-Z8d"/>
+                <outlet property="star3" destination="mjO-zc-D9y" id="1lP-hp-e6Q"/>
+                <outlet property="star4" destination="N0t-D9-gAo" id="ZMy-FN-e1x"/>
+                <outlet property="star5" destination="Hzj-ar-6q1" id="hK0-zS-dfS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mng-g2-VON">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="center" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RUg-aY-aaA">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3RH-JF-cTG" customClass="star" customModule="StarRating" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="5" width="50" height="40"/>
+                                    <color key="backgroundColor" red="1" green="0.1065594943" blue="0.087042581059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="yellowGrad">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                            <color key="value" red="1" green="0.1065594943" blue="0.087042581059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2W-Mj-jiM" customClass="star" customModule="StarRating" customModuleProvider="target">
+                                    <rect key="frame" x="50" y="5" width="50" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="yellowGrad">
+                                            <real key="value" value="0.69999999999999996"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                            <color key="value" red="0.99942404029999998" green="0.79810793537222224" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjO-zc-D9y" customClass="star" customModule="StarRating" customModuleProvider="target">
+                                    <rect key="frame" x="100" y="5" width="50" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="yellowGrad">
+                                            <real key="value" value="0.40000000000000002"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                            <color key="value" red="0.58081901069999997" green="0.223437391225" blue="0.59335167539722222" alpha="0.83743578767123283" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0t-D9-gAo" customClass="star" customModule="StarRating" customModuleProvider="target">
+                                    <rect key="frame" x="150" y="5" width="50" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                            <color key="value" red="1" green="0.099338107638888895" blue="0.75204081960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="yellowGrad">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hzj-ar-6q1" customClass="star" customModule="StarRating" customModuleProvider="target">
+                                    <rect key="frame" x="200" y="5" width="50" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="yellowGrad">
+                                            <real key="value" value="0.69999999999999996"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                            <color key="value" red="0.35085434430000001" green="0.95869075586388897" blue="0.61363670950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="mjO-zc-D9y" firstAttribute="leading" secondItem="y2W-Mj-jiM" secondAttribute="trailing" id="5wf-al-NeQ"/>
+                                <constraint firstAttribute="bottom" secondItem="y2W-Mj-jiM" secondAttribute="bottom" constant="5" id="8Hs-gL-SkU"/>
+                                <constraint firstItem="N0t-D9-gAo" firstAttribute="leading" secondItem="mjO-zc-D9y" secondAttribute="trailing" id="Bfo-jZ-0BO"/>
+                                <constraint firstItem="mjO-zc-D9y" firstAttribute="top" secondItem="RUg-aY-aaA" secondAttribute="top" constant="5" id="D99-7d-EIO"/>
+                                <constraint firstItem="N0t-D9-gAo" firstAttribute="top" secondItem="RUg-aY-aaA" secondAttribute="top" constant="5" id="Iog-Zv-3jy"/>
+                                <constraint firstAttribute="trailing" secondItem="Hzj-ar-6q1" secondAttribute="trailing" id="LeR-HJ-Vfu"/>
+                                <constraint firstItem="3RH-JF-cTG" firstAttribute="top" secondItem="RUg-aY-aaA" secondAttribute="top" constant="5" id="ORM-6v-jr4"/>
+                                <constraint firstItem="y2W-Mj-jiM" firstAttribute="leading" secondItem="3RH-JF-cTG" secondAttribute="trailing" id="Srj-zh-5Gj"/>
+                                <constraint firstAttribute="bottom" secondItem="3RH-JF-cTG" secondAttribute="bottom" constant="5" id="Tpk-Al-C4y"/>
+                                <constraint firstItem="3RH-JF-cTG" firstAttribute="leading" secondItem="RUg-aY-aaA" secondAttribute="leading" id="WKn-46-zaX"/>
+                                <constraint firstAttribute="bottom" secondItem="N0t-D9-gAo" secondAttribute="bottom" constant="5" id="X70-6G-F4n"/>
+                                <constraint firstItem="y2W-Mj-jiM" firstAttribute="top" secondItem="RUg-aY-aaA" secondAttribute="top" constant="5" id="bhv-gT-F3d"/>
+                                <constraint firstAttribute="bottom" secondItem="mjO-zc-D9y" secondAttribute="bottom" constant="5" id="gLF-r3-8oa"/>
+                                <constraint firstItem="Hzj-ar-6q1" firstAttribute="top" secondItem="RUg-aY-aaA" secondAttribute="top" constant="5" id="oB6-bd-m44"/>
+                                <constraint firstItem="Hzj-ar-6q1" firstAttribute="leading" secondItem="N0t-D9-gAo" secondAttribute="trailing" id="oe0-C9-tKU"/>
+                                <constraint firstAttribute="bottom" secondItem="Hzj-ar-6q1" secondAttribute="bottom" constant="5" id="sNx-JH-Nfu"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RUg-aY-aaA" firstAttribute="top" secondItem="Mng-g2-VON" secondAttribute="top" id="Od9-TT-i7R"/>
+                        <constraint firstAttribute="trailing" secondItem="RUg-aY-aaA" secondAttribute="trailing" id="YuP-is-7aP"/>
+                        <constraint firstAttribute="bottom" secondItem="RUg-aY-aaA" secondAttribute="bottom" id="dm8-By-j7G"/>
+                        <constraint firstItem="RUg-aY-aaA" firstAttribute="leading" secondItem="Mng-g2-VON" secondAttribute="leading" id="pl2-vf-zLC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.3079663212435233" green="0.3079663212435233" blue="0.3079663212435233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mng-g2-VON" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="08p-PH-oXr"/>
+                <constraint firstItem="Mng-g2-VON" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8Yt-Gk-j8p"/>
+                <constraint firstItem="Mng-g2-VON" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="X8D-hd-pVo"/>
+                <constraint firstItem="Mng-g2-VON" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="rJz-0l-Qtt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-48" y="-341.82908545727139"/>
+        </view>
+    </objects>
+</document>
